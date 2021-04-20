@@ -1,0 +1,6 @@
+1 BTC = 62379.04 USD 
+1 hp = 745.699872 watt
+1 lbs = 0.4536 kg
+1 gb = 1024 mega
+1 mega = 1024 kb
+1 tb = 1000 gb
