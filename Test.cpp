@@ -302,7 +302,7 @@ TEST_CASE("=== IO Operators ===")
     SUBCASE("=== Input operator '<<' ===")
     {
         NumberWithUnits a;
-        istringstream sample_input{"700 [ kg ]"};
+        istringstream sample_input{"700 [kg]"};
         sample_input >> a;
         CHECK_EQ(a, NumberWithUnits{700, "kg"});
         NumberWithUnits b;
@@ -318,7 +318,7 @@ TEST_CASE("=== IO Operators ===")
         sample_input3 >> d;
         CHECK_EQ(d, NumberWithUnits{0.22222232312123, "kg"});
         NumberWithUnits e;
-        istringstream sample_input4{"-30 [ ILSD     ]"};
+        istringstream sample_input4{"dsldkk-30 [ ILS     ]"};
         CHECK_THROWS(sample_input4 >> e); // Bad unit type thats not associate with the convert table
         NumberWithUnits f;
         istringstream sample_input5{"[0.22222232312123  kg      ]"};
